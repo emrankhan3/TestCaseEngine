@@ -3,6 +3,8 @@ const fire = ()=>{
     let amount = $('#amount').val()
     let start = $('#start').val()
     let end = $('#end').val()
+    start=Number(start)
+    end=Number(end)
     if(start<0)start=0
     if(end<start)end=start
     let ans = ''
