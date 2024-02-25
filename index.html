@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TestEngine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <label for="amount">Amount, how many numbers you need</label>
-    <input id="amount" type="number">
-    <br>
-    <label for="start">start</label>
-    <input id="start" type="number">
-    <label for="end">end</label>
-    <input id="end" type="number">
-    <button onclick="fire()" id="generate">Generate</button>
-    <br>
-    <hr>
-    
-    <button id="copybtn">Copy Text</button>
-    <div id="output">
+<body class="bg-slate-900">
+    <div class="bg-slate-200 m-4 p-5 font-serif">
 
+        <label class="" for="amount">Amount, how many numbers you need</label>
+        <input id="amount" type="number">
+        <br>
+        <label for="start">start</label>
+        <input class="border border-slate-900" id="start" type="number">
+        <label for="end">end</label>
+        <input id="end" type="number">
+        <button class="px-2 py-1 bg-cyan-500 rounded-md shadow-md hover:bg-cyan-300 animate-pulse text-white" onclick="fire()" id="generate">Generate</button>
+        <br>
+        <hr>
+        
+        <button class="rounded-md text-gray-700 px-2 py-1 bg-green-300 shadow-sm" id="copybtn">Copy Text</button>
+        <div class="bg-slate-100 shadow-inner shadow-md" id="output">
+            
+        </div>
+        
     </div>
-
- 
-      
-
-    <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
+        
+        
+        
+        <script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
