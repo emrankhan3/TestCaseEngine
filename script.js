@@ -14,3 +14,29 @@ const fire = ()=>{
     }
     $('#output').text(ans)
 }
+
+
+
+// Get the text to copy and copy button
+var copyText = document.getElementById("output");
+var copyBtn = document.getElementById("copybtn");
+
+// Add click event listener to copy button
+copyBtn.addEventListener("click", function() {
+
+  // Select the text to copy
+  var range = document.createRange();
+  range.selectNode(copyText);
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range);
+
+  // Copy selection
+  document.execCommand("copy");
+  
+  // Deselect everything
+  window.getSelection().removeAllRanges();
+
+  // Show confirmation
+  alert("Text copied");
+}); 
+
